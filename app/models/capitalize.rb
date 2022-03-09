@@ -1,0 +1,2 @@
+class Capitalize < ApplicationRecord
+end
