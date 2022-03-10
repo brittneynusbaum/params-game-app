@@ -1,1 +1,7 @@
 GET http://localhost:3000/parameter
+
+###
+GET http://localhost:3000/segment_param/5/10
+
+###
+GET http://localhost:3000/guess_number/50

@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get "/parameter" => "caps#capitalize"
+  get "/segment_param/:number_1/:number_2" => "caps#add"
+  get "/guess_number/:number" => "caps#guess"
 end
