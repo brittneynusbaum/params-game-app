@@ -17,10 +17,23 @@ class CapsController < ApplicationController
     elsif guess < answer
       statement = "Too low"
     elsif guess == answer
-      p "You guess the correct number!"
-    
-      render json: {answer: statement}
-    
+      statement = "You guessed the correct number!"
     end
+    render json: {answer: statement}
   end
+  
+  def body_guess
+    guess = params[:hidden_info]
+    answer = 50
+
+    if guess > answer
+      statement = "Too high"
+    elsif guess < answer
+      statement = "Too low"
+    elsif guess == answer
+      statement = "You guessed the correct number!"
+    end
+    render json: {answer: statement}
+  end
+
 end

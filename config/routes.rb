@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get "/parameter" => "caps#capitalize"
   get "/segment_param/:number_1/:number_2" => "caps#add"
   get "/guess_number/:number" => "caps#guess"
+
+  post "/body_guess" => "caps#body_guess"
 end

@@ -5,3 +5,11 @@ GET http://localhost:3000/segment_param/5/10
 
 ###
 GET http://localhost:3000/guess_number/50
+
+###
+POST http://localhost:3000/body_guess
+content-type: application/json
+
+{
+  "hidden_info": 45
+}
